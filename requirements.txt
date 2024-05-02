@@ -1,0 +1,4 @@
+python-dotenv==1.0.0
+pygame==2.5.2
+py-nillion-client==0.1.1
+nada-dsl==0.1.1

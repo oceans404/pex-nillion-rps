@@ -1,0 +1,12 @@
+---
+program: main
+inputs:
+  secrets:
+    choice_computer:
+      SecretInteger: '10'
+    choice_player_2:
+      SecretInteger: '10'
+  public_variables: {}
+expected_outputs:
+  game_result:
+    SecretInteger: '0'
