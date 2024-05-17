@@ -33,7 +33,7 @@ body:
     attributes:
       label: Project Description
       description: What did you build?
-      value: |
+      placeholder: |
         We built...
       render: bash
     validations:
@@ -42,10 +42,10 @@ body:
     id: problems-solved
     attributes:
       label: What problems does your project solve? How does it preserve privacy for users?
-      value: |
-        - 
-        -
-        -
+      placeholder: |
+        - Problem 1: Solution 1
+        - Problem 2: Solution 2
+        - The project preserves privacy by...
       render: bash
     validations:
       required: true
@@ -56,7 +56,7 @@ body:
       value: |
         We used Nillion for...
         
-        *Nada program link(s)*
+        Nada program link(s)
         - [link to Nada program]
         - [link to Nada program]
       render: bash
