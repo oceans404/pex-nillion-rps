@@ -48,21 +48,17 @@ body:
         - Problem 2: Solution 2
         - The project preserves privacy by...
       render: bash
-    validations:
-      required: true
   - type: textarea
     id: nillion-usage
     attributes:
       label: How does the project use Nillion? Describe and link to any Nada programs
-      value: |
+      placeholder: |
         We used Nillion for...
         
         Nada program link(s)
         - [link to Nada program]
         - [link to Nada program]
       render: bash
-    validations:
-      required: true
   - type: textarea
     id: feedback
     attributes:
