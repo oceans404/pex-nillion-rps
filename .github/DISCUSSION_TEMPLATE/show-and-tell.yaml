@@ -74,7 +74,7 @@ body:
   - type: input
     id: social handles
     attributes:
-      label: Optional: Link your project / team social handles
+      label: Optional: Link your project and team members' social handles
       placeholder: "https://twitter.com/nillionnetwork"
   - type: input
     id: eth-address
