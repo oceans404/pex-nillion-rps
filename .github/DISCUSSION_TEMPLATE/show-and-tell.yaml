@@ -15,6 +15,17 @@ body:
     id: video
     attributes:
       label: Video Walkthough Link
+  - type: dropdown
+    id: category
+    attributes:
+      label: Show and tell project type
+      options:
+        - Nucleus Program Team (FE)
+        - Novel Nada Program Example
+        - Builder Bounty Submission
+        - Hackathon Project Submission
+        - Community Builder
+        - Other
     validations:
       required: true
   - type: textarea
@@ -30,7 +41,7 @@ body:
   - type: textarea
     id: problems-solved
     attributes:
-      label: What problems does your project solve? How does it preserve privacy?
+      label: What problems does your project solve? How does it preserve privacy for users?
       value: |
         - 
         -
@@ -52,25 +63,11 @@ body:
       render: bash
     validations:
       required: true
-  - type: input
-    id: has-id
+  - type: textarea
+    id: feedback
     attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
-    validations:
-      required: true
-  - type: dropdown
-    id: category
-    attributes:
-      label: Show and tell project type
-      options:
-        - Novel Nada Program
-        - Builder Bounty Submission
-        - Hackathon Project Submission
-        - Nucleus Team (FE)
-        - Community Builder
-    validations:
-      required: true
+      label: Is there anything else you want to share?
+      description: Feature requests, bugs encountered, any help or support you need from Nillion to keep building?
   - type: input
     id: social-handles
     attributes:
