@@ -46,7 +46,6 @@ body:
         - 
         -
         -
-        ...
       render: bash
     validations:
       required: true
@@ -58,8 +57,8 @@ body:
         We used Nillion for...
         
         *Nada program link(s)*
-        - 
-        ...
+        - [link to Nada program]
+        - [link to Nada program]
       render: bash
     validations:
       required: true
@@ -77,7 +76,7 @@ body:
     id: eth-address
     attributes:
       label: Optional - Team ETH Address(es)
-      value: |
+      placeholder: |
         - 0x...
         - 0x...
   - type: markdown
