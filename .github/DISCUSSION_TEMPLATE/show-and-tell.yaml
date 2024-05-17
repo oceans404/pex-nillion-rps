@@ -9,12 +9,13 @@ body:
     id: category
     attributes:
       label: Show and tell project type
+      description: Are you sharing a bounty submission? An example Nada program? Let us know!
       options:
+        - Community Builder
         - Nucleus Program Team (FE)
         - Novel Nada Program Example
         - Builder Bounty Submission
         - Hackathon Project Submission
-        - Community Builder
         - Other
     validations:
       required: true
@@ -32,7 +33,7 @@ body:
     id: description
     attributes:
       label: Project Description
-      description: What did you build?
+      description: What did you build? Describe your use case.
       placeholder: |
         We built...
       render: bash
