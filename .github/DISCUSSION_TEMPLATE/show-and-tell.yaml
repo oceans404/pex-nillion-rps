@@ -5,16 +5,6 @@ body:
     attributes:
       value: |
         Tell the Nillion developer community about your project:
-  - type: input
-    id: repo
-    attributes:
-      label: Github Repo Link
-    validations:
-      required: true
-  - type: input
-    id: video
-    attributes:
-      label: Video Walkthough Link
   - type: dropdown
     id: category
     attributes:
@@ -28,6 +18,16 @@ body:
         - Other
     validations:
       required: true
+  - type: input
+    id: repo
+    attributes:
+      label: Github Repo Link
+    validations:
+      required: true
+  - type: input
+    id: video
+    attributes:
+      label: Video Walkthough Link
   - type: textarea
     id: description
     attributes:
@@ -68,16 +68,18 @@ body:
     attributes:
       label: Is there anything else you want to share?
       description: Feature requests, bugs encountered, any help or support you need from Nillion to keep building?
-  - type: input
+  - type: textarea
     id: social-handles
     attributes:
       label: Optional - Link your project and team members' social handles
       placeholder: "https://twitter.com/nillionnetwork"
-  - type: input
+  - type: textarea
     id: eth-address
     attributes:
       label: Optional - Team ETH Address(es)
-      placeholder: "0x..."
+      value: |
+        - 0x...
+        - 0x...
   - type: markdown
     attributes:
       value: | 
