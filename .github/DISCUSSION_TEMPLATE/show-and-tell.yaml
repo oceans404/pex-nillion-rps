@@ -1,28 +1,57 @@
-title: "[General] "
-labels: ["General Introduction"]
+title: "[Your Project Title]"
+labels: ["demo"]
 body:
   - type: markdown
     attributes:
       value: |
-        This is text that will show up in the template!
-  - type: textarea
-    id: improvements
+        Tell the Nillion developer community about your project:
+  - type: input
+    id: repo
     attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
+      label: Github Repo Link
+    validations:
+      required: true
+  - type: input
+    id: video
+    attributes:
+      label: Video Walkthough Link
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Project Description
+      description: What did you build?
       value: |
-        1.
-        2.
-        3.
+        We built...
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: problems-solved
+    attributes:
+      label: What problems does your project solve? How does it preserve privacy?
+      value: |
+        - 
+        -
+        -
         ...
       render: bash
     validations:
       required: true
-  - type: markdown
+  - type: textarea
+    id: nillion-usage
     attributes:
+      label: How does the project use Nillion? Describe and link to any Nada programs
       value: |
-        ## Markdown header
-        And some more markdown
+        We used Nillion for...
+        
+        *Nada program link(s)*
+        - 
+        ...
+      render: bash
+    validations:
+      required: true
   - type: input
     id: has-id
     attributes:
@@ -31,25 +60,43 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: download
+    id: category
     attributes:
-      label: Which area of this project could be most improved?
+      label: Show and tell project type
       options:
-        - Documentation
-        - Pull request review time
-        - Bug fix time
-        - Release cadence
+        - Novel Nada Program
+        - Builder Bounty Submission
+        - Hackathon Project Submission
+        - Nucleus Team (FE)
+        - Community Builder
     validations:
       required: true
-  - type: checkboxes
+  - type: input
+    id: social handles
     attributes:
-      label: Check that box!
-      options:
-        - label: This one!
-          required: true
-        - label: I won't stop you if you check this one, too
+      label: Optional: Link your project / team social handles
+      placeholder: "https://twitter.com/nillionnetwork"
+  - type: input
+    id: eth-address
+    attributes:
+      label: Optional: Team ETH Address(es)
+      placeholder: "0x..."
   - type: markdown
     attributes:
       value: |
         ### The thrilling conclusion
         _to our template_
+  - type: markdown
+      attributes:
+        value: |
+          ## Thanks for building on Nillion!
+          
+          Thanks for sharing your project with the Nillion developer community through show and tell! 
+          
+          ### Next Steps
+
+          - 📲 Share your Show and Tell post on socials and tag [@NillionNetwork](https://twitter.com/nillionnetwork)
+          - 📸 Want to see your project included in the Nillion Showcase of awesome open source projects? Follow [PR instructions here](https://docs.nillion.com/showcase#add-your-project-to-the-list)
+          - 🧢 Want to earn exclusive Nillion swag? [Provide developer feedback here](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2g8w5axKPSxDb7I6kTPsuSsZwdrxTruNDESqbgilOneHDhb5bJW4fyt2yKwG2Xaj8j--LfpkKB)
+
+        
