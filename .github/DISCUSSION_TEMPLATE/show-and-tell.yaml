@@ -74,12 +74,12 @@ body:
   - type: input
     id: social handles
     attributes:
-      label: Optional: Link your project and team members' social handles
+      label: Optional - Link your project and team members' social handles
       placeholder: "https://twitter.com/nillionnetwork"
   - type: input
     id: eth-address
     attributes:
-      label: Optional: Team ETH Address(es)
+      label: Optional - Team ETH Address(es)
       placeholder: "0x..."
   - type: markdown
     attributes:
